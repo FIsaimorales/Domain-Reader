@@ -44,6 +44,8 @@ utils.py         # Funciones de soporte y reportes.
 ##  Instalación y Configuración
 
 1.  Clonar o descargar este repositorio en tu máquina local.
+   
+* git clone https://github.com/FIsaimorales/Domain-Reader.git
 
 2.  Crear un entorno virtual para mantener las librerías aisladas:
     Bash
