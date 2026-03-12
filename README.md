@@ -56,6 +56,3 @@ La herramienta ejecuta un flujo de trabajo modular que incluye:
 
 Introduce el dominio (ej: google.com) cuando se solicite. Al finalizar, el programa generará un archivo reporte_{dominio}.txt con todos los hallazgos detallados.
 
----
-
-<small> Esta herramienta fue creada exclusivamente con fines educativos y de auditoría ética. El uso de este script contra objetivos sin autorización previa y por escrito es ilegal. El autor no se hace responsable del mal uso o de los daños causados por esta herramienta.
