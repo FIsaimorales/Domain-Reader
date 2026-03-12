@@ -4,7 +4,6 @@
 
 ##  Características Principales
 
----
 
 La herramienta ejecuta un flujo de trabajo modular que incluye:
 
@@ -14,7 +13,6 @@ La herramienta ejecuta un flujo de trabajo modular que incluye:
 * **Infraestructura:** Escaneo de puertos comunes con detección de banners de servicio y consulta de registros DNS (MX/TXT).
 * **Scanner Activo:** Búsqueda de fugas de información crítica (`.env`, `.git`, backups).
 
----
 
 ##  Requisitos Previos
 
@@ -22,7 +20,6 @@ La herramienta ejecuta un flujo de trabajo modular que incluye:
 
 *  Una API Key de VirusTotal (Gratuita).
 
----
 
 ##  Instalación y Configuración
 
@@ -50,7 +47,6 @@ La herramienta ejecuta un flujo de trabajo modular que incluye:
 
 *   VT_API_KEY=tu_api_key_aqui
 
----
 
 ## Uso
 
