@@ -16,23 +16,6 @@ La herramienta ejecuta un flujo de trabajo modular que incluye:
 
 ---
 
-##  Estructura del Proyecto
-
-El proyecto sigue una arquitectura modular para facilitar su mantenimiento:
-
-Domain Reader/
-main.py              # Orquestador principal y flujo de tqdm.
-requirements.txt     # Dependencias del proyecto.
-.env                 # Variables de entorno (API Key).
-wordlist.txt         # Diccionario para el fuzzer.
-modules/             # Lógica modularizada.
-network.py       # Protocolos de red y DNS.
-web_audit.py     # Análisis de aplicaciones web.
-scanner.py       # detección de fugas.
-utils.py         # Funciones de soporte y reportes.
-
----
-
 ##  Requisitos Previos
 
 *  Python 3.10 o superior.
@@ -48,7 +31,6 @@ utils.py         # Funciones de soporte y reportes.
 * git clone https://github.com/FIsaimorales/Domain-Reader.git
 
 2.  Crear un entorno virtual para mantener las librerías aisladas:
-    Bash
 
 *   python -m venv venv
 
@@ -63,6 +45,7 @@ utils.py         # Funciones de soporte y reportes.
 *   pip install -r requirements.txt
 
 5.  Configurar las credenciales:
+   
 *    Crea un archivo .env en la raíz del proyecto y añade tu llave de VirusTotal:
 
 *   VT_API_KEY=tu_api_key_aqui
