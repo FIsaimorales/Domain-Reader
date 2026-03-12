@@ -21,15 +21,15 @@ La herramienta ejecuta un flujo de trabajo modular que incluye:
 El proyecto sigue una arquitectura modular para facilitar su mantenimiento:
 
 Domain Reader/
-├── main.py              # Orquestador principal y flujo de tqdm.
-├── requirements.txt     # Dependencias del proyecto.
-├── .env                 # Variables de entorno (API Key).
-├── wordlist.txt         # Diccionario para el fuzzer.
-└── modules/             # Lógica modularizada.
-    ├── network.py       # Protocolos de red y DNS.
-    ├── web_audit.py     # Análisis de aplicaciones web.
-    ├── scanner.py       # detección de fugas.
-    └── utils.py         # Funciones de soporte y reportes.
+main.py              # Orquestador principal y flujo de tqdm.
+requirements.txt     # Dependencias del proyecto.
+.env                 # Variables de entorno (API Key).
+wordlist.txt         # Diccionario para el fuzzer.
+modules/             # Lógica modularizada.
+network.py       # Protocolos de red y DNS.
+web_audit.py     # Análisis de aplicaciones web.
+scanner.py       # detección de fugas.
+utils.py         # Funciones de soporte y reportes.
 
 ---
 
