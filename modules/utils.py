@@ -1,5 +1,5 @@
 from datetime import datetime
-import json
+import json, os
 import requests
 
 def clean_datetime(date):
@@ -26,9 +26,18 @@ def validar_API_KEY(KEY):
         return False, f"Error de conexion: {e}"
 
 def generar_reporte(dominio, contenido):
+    carpeta = "escaneos"
+
+    if not os.path.exists(carpeta):
+        os.makedirs(carpeta)
+        print(f"[*] Carpeta '{carpeta}' creada para organizar los reportes.")
+
     nombre_archivo = f"reporte_{dominio}.txt"
-    with open(nombre_archivo, "w", encoding="utf-8") as f:
+    ruta_completa = os.path.join(carpeta, nombre_archivo)
+
+    with open(ruta_completa, "w", encoding="utf-8") as f:
         f.write(contenido)
+
     print(f"Analisis completado. Reporte guardado en: {nombre_archivo}")
 
 def limpiar_dominio(url):
