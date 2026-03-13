@@ -55,5 +55,7 @@ def __main__():
     
     generar_reporte(target, reporte_final)
 
+    input("\nPresiona Enter para salir...")
+
 if __name__ == "__main__":
     __main__()
