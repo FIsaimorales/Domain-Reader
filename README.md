@@ -4,7 +4,6 @@
 
 ##  Características Principales
 
----
 
 La herramienta ejecuta un flujo de trabajo modular que incluye:
 
@@ -14,24 +13,6 @@ La herramienta ejecuta un flujo de trabajo modular que incluye:
 * **Infraestructura:** Escaneo de puertos comunes con detección de banners de servicio y consulta de registros DNS (MX/TXT).
 * **Scanner Activo:** Búsqueda de fugas de información crítica (`.env`, `.git`, backups).
 
----
-
-##  Estructura del Proyecto
-
-El proyecto sigue una arquitectura modular para facilitar su mantenimiento:
-
-Domain Reader/
-├── main.py              # Orquestador principal y flujo de tqdm.
-├── requirements.txt     # Dependencias del proyecto.
-├── .env                 # Variables de entorno (API Key).
-├── wordlist.txt         # Diccionario para el fuzzer.
-└── modules/             # Lógica modularizada.
-    ├── network.py       # Protocolos de red y DNS.
-    ├── web_audit.py     # Análisis de aplicaciones web.
-    ├── scanner.py       # detección de fugas.
-    └── utils.py         # Funciones de soporte y reportes.
-
----
 
 ##  Requisitos Previos
 
@@ -39,14 +20,14 @@ Domain Reader/
 
 *  Una API Key de VirusTotal (Gratuita).
 
----
 
 ##  Instalación y Configuración
 
 1.  Clonar o descargar este repositorio en tu máquina local.
+   
+* git clone https://github.com/FIsaimorales/Domain-Reader.git
 
 2.  Crear un entorno virtual para mantener las librerías aisladas:
-    Bash
 
 *   python -m venv venv
 
@@ -61,11 +42,11 @@ Domain Reader/
 *   pip install -r requirements.txt
 
 5.  Configurar las credenciales:
+   
 *    Crea un archivo .env en la raíz del proyecto y añade tu llave de VirusTotal:
 
 *   VT_API_KEY=tu_api_key_aqui
 
----
 
 ## Uso
 
@@ -75,6 +56,3 @@ Domain Reader/
 
 Introduce el dominio (ej: google.com) cuando se solicite. Al finalizar, el programa generará un archivo reporte_{dominio}.txt con todos los hallazgos detallados.
 
----
-
-<small> Esta herramienta fue creada exclusivamente con fines educativos y de auditoría ética. El uso de este script contra objetivos sin autorización previa y por escrito es ilegal. El autor no se hace responsable del mal uso o de los daños causados por esta herramienta.
