@@ -1,5 +1,5 @@
 import whois, requests, socket, dns.resolver, time
-from utils import clean_datetime
+from modules.utils import clean_datetime
 
 def obtener_info_whois(dominio):
     try:
