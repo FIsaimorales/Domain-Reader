@@ -56,3 +56,12 @@ La herramienta ejecuta un flujo de trabajo modular que incluye:
 
 Introduce el dominio (ej: google.com) cuando se solicite. Al finalizar, el programa generará un archivo reporte_{dominio}.txt con todos los hallazgos detallados.
 
+##  Uso del Ejecutable (Versión .exe)
+
+Si no deseas instalar Python, puedes descargar el ejecutable desde la sección de **Releases**.
+
+1. Descarga `main.exe`.
+2. Crea un archivo llamado `.env` en la **misma carpeta** donde guardaste el archivo.
+3. Abre el archivo `.env` con el bloc de notas y añade tu API Key:
+   
+   VT_API_KEY=tu_llave_de_virustotal_aqui
